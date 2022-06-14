@@ -20,14 +20,15 @@
         // navBar
         .navBar {
             position: sticky;
-            padding: 20px 0;
             top: 0;
             border-top: 1px solid rgba(8, 75, 109, 0.08);
             border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+            background-color: $solidWhite;
             .wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 20px 0;
             }
             input[type=checkbox] {
                 opacity: 0;
@@ -40,6 +41,11 @@
             .menuIcon,
             .bag {
                 margin-right: 15px;
+            }
+            .menuIcon {
+                background-color: transparent;
+                border: none;
+                padding: 0;
             }
             .bag {
                 display: flex;
