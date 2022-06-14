@@ -322,7 +322,7 @@ h4 {
 }
 
 h5 {
-  font-size: 0.4rem;
+  font-size: 0.7rem;
 }
 
 ul,
@@ -595,6 +595,7 @@ header .wrapper {
   background-size: cover;
   background-position: center;
   min-height: 90vh;
+  margin-bottom: 0;
 }
 .play .wrapper {
   display: -webkit-box;
@@ -614,4 +615,44 @@ header .wrapper {
   background-color: #fff;
   padding: 60px;
   text-align: center;
+}
+
+footer {
+  background: #084b6d;
+  padding: 75px;
+  color: #fff;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerLogo h4 {
+  color: #fff;
+}
+
+.footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerNav {
+  width: 50%;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
