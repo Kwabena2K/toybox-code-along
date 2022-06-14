@@ -5,34 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
     <title>STARTER - Toybox Homepage</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <!-- skip link  -->
-    <a href="#mainContent" class="skip-link">Skip to main content</a>
+    <!-- Skip Link -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+
+    <!-- Announcements Bar -->
     <div class="announcements">
         <div class="wrapper">
             <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout</p>
         </div>
     </div>
 
-    <!-- navigation -->
-
+    <!-- Navigation -->
     <nav class="navBar">
         <div class="wrapper">
-            <!-- Slide Out Menu -->
+            <!-- Slide Out Menu Button -->
             <input type="checkbox" id="openSideMenu">
-            <label for="openSideMenu">
-			<img src="./assets/menu-button.svg" alt="Menu Button">
-		</label>
+            <label for="openSideMenu" class="menuButton">
+				<img src="./assets/menu-button.svg" alt="Menu Button">
+			</label>
 
             <!-- Slide Out Nav Content -->
             <div class="slideOutNav">
-                <button>X</button>
-            </div>
+                <div class="buttonContainer">
 
+                    <button class="menuClose">x</button>
+                </div>
+                <!-- Menu Content -->
+                <nav>
+                    <ul class="mainMenu">
+                        <li>
+                            <a href="">Shop</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
             <!-- NavBar -->
             <!-- Logo -->
@@ -43,8 +66,8 @@
             <!-- Search/Cart -->
             <div class="searchCart">
                 <button class="menuIcon">
-			<img src="./assets/search.svg" alt="Search Icon">
-		</button>
+					<img src="./assets/search.svg" alt="Search Icon">
+				</button>
 
                 <a href="#" class="bag">
                     <img src="./assets/shop-bag.svg" alt="">
@@ -54,37 +77,9 @@
                     <p class="smallCopy">0</p>
                 </div>
             </div>
+
         </div>
     </nav>
-
-
-
-
-    <!-- Menu Content -->
-    <nav>
-        <ul class="mainMenu">
-            <li>
-                <a href="Shop"></a>
-            </li>
-            <li>
-                <a href="About"></a>
-            </li>
-            <li>
-                <a href="FAQ"></a>
-            </li>
-            <li>
-                <a href="News"></a>
-            </li>
-            <li>
-                <a href="Contact"></a>
-            </li>
-        </ul>
-    </nav>
-
-
-
-
-
 
 
     <!-- Header -->
@@ -92,21 +87,21 @@
     <header>
         <div class="wrapper">
             <div class="headerImgContainer">
-                <img src="./assets//header-image.jpg" alt="A child in overalls playing with colourful wooden blocks on the floor">
+                <img src="./assets/header-image.jpg" alt="A toddler playing with wooden blocks">
             </div>
-
             <div class="textContainer">
                 <h3>Handcrafted for kids</h3>
-                <h2>Go on, let them play with wooden blocks</h2>
+                <h2>Go on, let them play with wooden blocks.</h2>
                 <p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis pulvinar tellus.</p>
                 <a href="#shop" class="shopButton button">Shop All</a>
             </div>
+            <!-- END TextContainer -->
         </div>
     </header>
 
     <!-- Main Area -->
     <main id="mainContent">
-        <!-- Categiries Section -->
+        <!-- Categories Section -->
         <section class="categories" id="categories">
             <div class="wrapper">
                 <h2>Categories</h2>
@@ -115,30 +110,36 @@
                 <!-- Product Gallery -->
                 <div class="categoryGallery">
                     <ul>
+
+                        <!-- Gallery Item One -->
                         <li class="items itemOne">
-                            <a href="">
-                                <img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
+                            <a href="#">
+                                <img src="./assets/safari-trio.jpg" alt="Three wooden safari animal toys for kids">
                                 <h4>Safari</h4>
                                 <p>Land-dwelling African favourites</p>
                             </a>
                         </li>
+
+                        <!-- Gallery Item Two -->
                         <li class="items itemTwo">
-                            <a href="">
-                                <img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed animal toys">
+                            <a href="#">
+                                <img src="./assets/ocean-trio.jpg" alt="Three wooden under sea creature toys for kids">
                                 <h4>Ocean</h4>
                                 <p>Adorable aquatic creatures</p>
                             </a>
                         </li>
+
                         <li class="items itemThree">
-                            <a href="">
-                                <img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
+                            <a href="#">
+                                <img src="./assets/dino-trio.jpg" alt="Three wooden dinosaur toys for kids">
                                 <h4>Dinos</h4>
                                 <p>Meet these prehistoric pals</p>
                             </a>
                         </li>
+
                         <li class="items itemFour">
-                            <a href="">
-                                <img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
+                            <a href="#">
+                                <img src="./assets/sale.jpg" alt="Toddler pulling two wooden animals on wheels">
                                 <h4>Sale</h4>
                                 <p>Act quickly and grab these bargains</p>
                             </a>
@@ -149,6 +150,7 @@
         </section>
 
         <!-- Let Them Play Section -->
+
         <section class="play" id="play">
             <div class="wrapper">
                 <div class="playContent">
@@ -161,21 +163,24 @@
         </section>
     </main>
 
-
+    <!-- FOOTER -->
     <footer id="footer" class="footer">
         <div class="wrapper">
+
             <div class="footerFlexContainer">
                 <!-- Logo -->
                 <a href="" class="logo">
                     <h4>Toybox</h4>
                 </a>
+
                 <!-- FooterNAV container -->
                 <div class="footerNav">
                     <nav>
+
                         <!-- Footer Shop List -->
                         <ul class="footerShop">
                             <li>
-                                <h4>Shop</h4>
+                                <h5>Shop</h5>
                             </li>
                             <li>
                                 <a href="#">Safari</a>
@@ -190,13 +195,13 @@
                                 <a href="#">Sale</a>
                             </li>
                         </ul>
-                        <!-- Footer Shop List END -->
+                        <!-- END Footer Shop List -->
 
 
                         <!-- Footer About List -->
                         <ul class="footerAbout">
                             <li>
-                                <h4>About</h4>
+                                <h5>About</h5>
                             </li>
                             <li>
                                 <a href="#">About Us</a>
@@ -214,12 +219,12 @@
                                 <a href="#">Contact</a>
                             </li>
                         </ul>
+                        <!-- END Footer About -->
 
-
-                        <!-- Footer About List END -->
-                        <ul class="footerTemplate">
+                        <!-- Footer Template List -->
+                        <ul class="footerTemp">
                             <li>
-                                <h4>Template</h4>
+                                <h5>Template</h5>
                             </li>
                             <li>
                                 <a href="#">Style Guide</a>
@@ -231,12 +236,12 @@
                                 <a href="#">Change Log</a>
                             </li>
                         </ul>
-                        <!-- END footer template list -->
+                        <!-- END Footer Template List -->
                     </nav>
                 </div>
-                <!-- END footer nav  -->
+                <!-- END FooterNav -->
             </div>
-            <!-- End footerContainer -->
+            <!-- END FooterFlexContainer -->
 
             <!-- Social and Copyright Flex Container -->
             <div class="social">
@@ -245,7 +250,7 @@
                 <div class="socialIcons">
                     <a href="#">
                         <i class="twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Link to twitter</span>
+                        <span class="sr-only">Link to Twitter</span>
                     </a>
                     <a href="#">
                         <i class="pinterest" aria-hidden="true"></i>
@@ -260,18 +265,19 @@
                         <span class="sr-only">Link to Facebook</span>
                     </a>
                 </div>
-                <!-- End of socialIcons -->
+                <!-- END socialIcons -->
 
                 <div class="copyright">
-                    <p class="smallCopy">©Copyright Company</p>
+                    <p class="smallCopy">© Copyright Company</p>
                 </div>
-                <!-- End copyright -->
-            </div>
-            <!-- End social -->
-        </div>
-        <!-- End footer wrapper -->
-    </footer>
+                <!-- END Copyright -->
 
+            </div>
+            <!-- END Social -->
+
+        </div>
+        <!-- END Footer Wrapper -->
+    </footer>
 
 </body>
 
