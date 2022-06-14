@@ -24,4 +24,8 @@ footer {
 .social {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
+    i {
+        margin: 0 10px;
+    }
 }
