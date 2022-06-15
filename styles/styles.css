@@ -353,7 +353,6 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
-  color: #fff;
   cursor: pointer;
 }
 
@@ -569,7 +568,7 @@ header .wrapper {
   background-image: url(../assets/wave.svg);
   background-size: 100% 150px;
   background-color: #fff5f5;
-  display: inline-block;
+  display: block;
 }
 
 .categories {
@@ -761,4 +760,107 @@ footer .footerFlexContainer {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 90px auto;
+  max-width: 1000px;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #333;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  text-transform: uppercase;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #084b6d;
+  outline: none;
+}
+
+input {
+  border-bottom: 1px solid #eee;
+}
+
+textarea {
+  border: 1px solid #eee;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #eee;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 0;
+}
+
+option {
+  font-family: "Jakarta Sans";
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+fieldset label {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+fieldset input {
+  accent-color: #084b6d;
 }
