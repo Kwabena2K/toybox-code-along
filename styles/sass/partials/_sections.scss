@@ -38,35 +38,46 @@
 }
 
 // Image Carousel
+.imageCarousel {
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.carousel__item {
+.carousel--item {
   display: none;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(0.9);
+  }
 
   img {
-    border-radius: 10%;
+    border-radius: 20%;
     background-color: $primary;
     width: 100%;
     padding: 40px;
-    max-width: 600px;
+    max-width: 550px;
     height: auto;
   }
 }
-.carousel__item--visible {
+.carousel--item--first {
   display: flex;
 }
 
 // Buttons
-.carousel__actions {
+.carousel--actions {
   display: flex;
   width: 100%;
   justify-content: space-around;
   position: absolute;
-  top: 380%;
+  top: 390%;
   transform: translateY(-50%);
 
   button {
@@ -80,11 +91,11 @@
     background: grey;
   }
 
-  button#carousel__button--prev {
+  button#carousel--button--previous {
     margin-left: 20px;
   }
 
-  button#carousel__button--next {
+  button#carousel--button--next {
     margin-right: 20px;
   }
 }

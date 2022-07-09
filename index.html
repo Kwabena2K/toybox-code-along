@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STARTER - Toybox Homepage</title>
+    <title>Toybox Homepage JS Carousel</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -167,24 +167,29 @@
       </section>
 
       <section class="imageCarousel">
+        <h3>Interactive images</h3>
         <div class="carousel">
-          <div class="carousel__item carousel__item--visible">
+          <div class="carousel--item carousel--item--first">
             <img src="./assets/triceratops.jpg" />
           </div>
-          <div class="carousel__item">
+          <div class="carousel--item">
             <img src="./assets/spinosaurus.jpg" />
           </div>
-          <div class="carousel__item">
+          <div class="carousel--item">
             <img src="./assets/crocodile.jpg" />
           </div>
 
-          <div class="carousel__actions">
-            <button id="carousel__button--prev" aria-label="Previous slide">
-              <
-            </button>
-            <button id="carousel__button--next" aria-label="Next slide">
-              >
-            </button>
+          <div class="carousel--item">
+            <img src="./assets/brontosaurus.jpg" />
+          </div>
+
+          <div class="carousel--item">
+            <img src="./assets/reef-fish.jpg" />
+          </div>
+
+          <div class="carousel--actions">
+            <button id="carousel--button--previous"><</button>
+            <button id="carousel--button--next">></button>
           </div>
         </div>
       </section>
@@ -320,7 +325,7 @@
   <script>
     //begin the index of the array at (0) which is the first image
     let slidePosition = 0;
-    const slides = document.getElementsByClassName("carousel__item");
+    const slides = document.getElementsByClassName("carousel--item");
     // store the carousel__item in a variable slides
 
     const totalSlides = slides.length;
@@ -328,7 +333,7 @@
 
     // when someone clicks the next button
     document
-      .getElementById("carousel__button--next")
+      .getElementById("carousel--button--next")
       .addEventListener("click", function () {
         //display hello when the next button is clicked
         //console.log("hello!");
@@ -337,7 +342,7 @@
 
     // when someone clicks the previous button
     document
-      .getElementById("carousel__button--prev")
+      .getElementById("carousel--button--previous")
       .addEventListener("click", function () {
         // display goodbye when the previous button is clicked
         //console.log("goodbye!");
@@ -346,10 +351,10 @@
 
     function updateSlidePosition() {
       for (let slide of slides) {
-        slide.classList.remove("carousel__item--visible");
+        slide.classList.remove("carousel--item--first");
       }
 
-      slides[slidePosition].classList.add("carousel__item--visible");
+      slides[slidePosition].classList.add("carousel--item--first");
     }
 
     // confirming the next button displays to the console

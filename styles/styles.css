@@ -615,6 +615,11 @@ header .wrapper {
           transform: scale(0.9);
 }
 
+.imageCarousel h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,25 +632,31 @@ header .wrapper {
           align-items: center;
 }
 
-.carousel__item {
+.carousel--item {
   display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.carousel__item img {
-  border-radius: 10%;
+.carousel--item:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.carousel--item img {
+  border-radius: 20%;
   background-color: #084b6d;
   width: 100%;
   padding: 40px;
-  max-width: 600px;
+  max-width: 550px;
   height: auto;
 }
 
-.carousel__item--visible {
+.carousel--item--first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.carousel__actions {
+.carousel--actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,11 +664,11 @@ header .wrapper {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  top: 380%;
+  top: 390%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.carousel__actions button {
+.carousel--actions button {
   border-radius: 50px;
   border: 0;
   font-weight: bold;
@@ -667,10 +678,10 @@ header .wrapper {
   color: white;
   background: grey;
 }
-.carousel__actions button#carousel__button--prev {
+.carousel--actions button#carousel--button--previous {
   margin-left: 20px;
 }
-.carousel__actions button#carousel__button--next {
+.carousel--actions button#carousel--button--next {
   margin-right: 20px;
 }
 
