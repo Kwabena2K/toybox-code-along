@@ -615,6 +615,65 @@ header .wrapper {
           transform: scale(0.9);
 }
 
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel__item {
+  display: none;
+}
+.carousel__item img {
+  border-radius: 10%;
+  background-color: #084b6d;
+  width: 100%;
+  padding: 40px;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel__item--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 380%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background: grey;
+}
+.carousel__actions button#carousel__button--prev {
+  margin-left: 20px;
+}
+.carousel__actions button#carousel__button--next {
+  margin-right: 20px;
+}
+
 .play {
   background-image: url("../assets/background-image.jpg");
   background-size: cover;

@@ -168,21 +168,21 @@
 
       <section class="imageCarousel">
         <div class="carousel">
-          <div class="carousel--item carousel__item--first">
-            <img src="./assets/elephant.jpg" />
+          <div class="carousel__item carousel__item--visible">
+            <img src="./assets/triceratops.jpg" />
           </div>
-          <div class="carousel--item">
-            <img src="./assets/brontosaurus.jpg" />
+          <div class="carousel__item">
+            <img src="./assets/spinosaurus.jpg" />
           </div>
-          <div class="carousel--item">
+          <div class="carousel__item">
             <img src="./assets/crocodile.jpg" />
           </div>
 
-          <div class="carousel--actions">
-            <button id="carousel--button--previous" aria-label="Previous slide">
+          <div class="carousel__actions">
+            <button id="carousel__button--prev" aria-label="Previous slide">
               <
             </button>
-            <button id="carousel--button--next" aria-label="Next slide">
+            <button id="carousel__button--next" aria-label="Next slide">
               >
             </button>
           </div>
@@ -321,32 +321,61 @@
     //begin the index of the array at (0) which is the first image
     let slidePosition = 0;
     const slides = document.getElementsByClassName("carousel__item");
+    // store the carousel__item in a variable slides
 
-    // totalSlides = the length of carousel__item because of(.length)
     const totalSlides = slides.length;
+    // totalSlides = the length of carousel__item(3) however it begins at (0) so it is 0,1,2
 
-    // when someone clicks the next button console log "hello!"
+    // when someone clicks the next button
     document
-      .getElementById("carousel--button--next")
+      .getElementById("carousel__button--next")
       .addEventListener("click", function () {
-        console.log("hello!");
-        // moveToNextSlide();
+        //display hello when the next button is clicked
+        //console.log("hello!");
+        moveToNextSlide();
       });
 
-    // when someone clicks the previous button console log "hello!"
+    // when someone clicks the previous button
     document
-      .getElementById("carousel--button--previous")
+      .getElementById("carousel__button--prev")
       .addEventListener("click", function () {
-        console.log("goodbye!");
-        // moveToPrevSlide();
+        // display goodbye when the previous button is clicked
+        //console.log("goodbye!");
+        moveToPrevSlide();
       });
 
     function updateSlidePosition() {
       for (let slide of slides) {
-        slide.classList.remove("carousel--item--first");
+        slide.classList.remove("carousel__item--visible");
       }
 
-      slides[slidePosition].classList.add("carousel--item--first");
+      slides[slidePosition].classList.add("carousel__item--visible");
+    }
+
+    // confirming the next button displays to the console
+    function moveToNextSlide() {
+      if (slidePosition === totalSlides - 1) {
+        // if slidePosition(0) = totalSlides(2)
+        slidePosition = 0;
+      } else {
+        // increase the position(1)
+        slidePosition++;
+      }
+      // update the position of the slides based on the if statement above
+      updateSlidePosition();
+    }
+
+    // confirming the prev button displays to the console
+    function moveToPrevSlide() {
+      if (slidePosition === 0) {
+        // if slidePosition(0) = totalSlides(2)
+        slidePosition = totalSlides - 1;
+      } else {
+        // decrease the position(-1)
+        slidePosition--;
+      }
+      // update the position of the slides based on the if statement above
+      updateSlidePosition();
     }
   </script>
 </html>
