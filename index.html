@@ -188,8 +188,8 @@
           </div>
 
           <div class="carousel--actions">
-            <button id="carousel--button--previous"><</button>
-            <button id="carousel--button--next">></button>
+            <button id="carousel--control--previous"><</button>
+            <button id="carousel--control--next">></button>
           </div>
         </div>
       </section>
@@ -323,17 +323,18 @@
     </footer>
   </body>
   <script>
-    //begin the index of the array at (0) which is the first image
+    //Start the array at (0) which is the first image
     let slidePosition = 0;
     const slides = document.getElementsByClassName("carousel--item");
-    // store the carousel__item in a variable slides
+    // store the div carousel--item in a variable slides
 
     const totalSlides = slides.length;
-    // totalSlides = the length of carousel__item(3) however it begins at (0) so it is 0,1,2
+    // create a new variable totalSlides
+    // totalSlides = the length of carousel--item(5) however it begins at (0) so it is 0,1,2,3,4
 
-    // when someone clicks the next button
+    // when someone clicks the next button execute this function
     document
-      .getElementById("carousel--button--next")
+      .getElementById("carousel--control--next")
       .addEventListener("click", function () {
         //display hello when the next button is clicked
         //console.log("hello!");
@@ -342,7 +343,7 @@
 
     // when someone clicks the previous button
     document
-      .getElementById("carousel--button--previous")
+      .getElementById("carousel--control--previous")
       .addEventListener("click", function () {
         // display goodbye when the previous button is clicked
         //console.log("goodbye!");
@@ -382,5 +383,9 @@
       // update the position of the slides based on the if statement above
       updateSlidePosition();
     }
+
+    $(".carousel").carousel({
+      interval: 2000,
+    });
   </script>
 </html>

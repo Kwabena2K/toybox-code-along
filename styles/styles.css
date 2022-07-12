@@ -664,7 +664,7 @@ header .wrapper {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  top: 390%;
+  top: 360%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -760,7 +760,6 @@ footer .footerFlexContainer {
   .categoryList .items {
     padding: 20px;
   }
-
   .footerFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -790,12 +789,10 @@ footer .footerFlexContainer {
        object-fit: cover;
     width: 100%;
   }
-
   .categoryList {
     padding: 15px;
     margin: 20px 15px;
   }
-
   .play .wrapper .playContent {
     width: 100%;
     padding: 15px;
@@ -806,11 +803,9 @@ footer .footerFlexContainer {
     width: 100%;
     margin: 10px;
   }
-
   .play .wrapper .playContent {
     padding: 10px 10px 15px;
   }
-
   .footerNav nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -820,7 +815,6 @@ footer .footerFlexContainer {
         -ms-flex-align: center;
             align-items: center;
   }
-
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
